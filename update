@@ -1,0 +1,12 @@
+#!/usr/bin/python3 
+###################################################################
+#Script Name	:                                                                                              
+#Description	:                                                                                 
+#Args           :                                                                                           
+#Author       	: Basu Hela
+#Email         	: Basuhela1999@gmail.com
+###################################################################
+
+import os
+i='apt-get'
+os.system("{} update && {} -y upgrade && {} -y dist-upgrade && {} -y autoremove && {} -y clean".format(i,i,i,i,i))

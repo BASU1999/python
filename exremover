@@ -1,0 +1,27 @@
+#!/usr/bin/python3 
+###################################################################
+#Script Name	:                                                                                              
+#Description	:                                                                                 
+#Args           :                                                                                           
+#Author       	: Basu Hela
+#Email         	: Basuhela1999@gmail.com
+###################################################################
+
+import os
+l_bin='/usr/loc/bin'
+os.chdir(l_bin)
+for i in os.listdir():
+    if i.endswith('bash'):
+        x=i.replace('.bash','')
+        os.system('mv {} {} && chmod u+x {}'.format(i,x,x))
+        print(i+' ==> '+x)
+        
+import os
+l_py='/usr/loc/bin/py'
+os.chdir(l_py)
+for i in os.listdir():
+    if i.endswith('py'):
+        x=i.replace('.py','')
+        os.system('mv {} {} && chmod u+x {}'.format(i,x,x))
+        print(i+' ==> '+x)
+        
